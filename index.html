@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css">
+		<style type="text/css">
+			h1{color:#000000;margin-bottom:200px}
+		</style>
+	</head>
+	<body>
+		<h1>My cool website</h1>
+		<a href="new.html">Visit My New Page!</a>
+		<button onclick="say_hello()">Say Hello</button>
+		<button onclick="fade()">Hide Text</button>
+		<button onclick="show()">Show Text</button>
+		<script type="text/javascript">
+			function say_hello() {
+				alert("Hello World!");
+			}
+		</script>
+		<script>
+			function fade() {
+				$(document).ready(function(){
+			  		$("p#fader").fadeOut(5000);
+				});	
+			}
+			function show() {
+				$(document).ready(function(){
+			  		$("p#fader").fadeIn(5000);
+				});	
+			}
+		</script>
+		<p id="fader">
+			Blah, cool stuff. 
+		</p>
+	</body>	
+</html>
+
